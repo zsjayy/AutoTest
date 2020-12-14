@@ -16,6 +16,11 @@ public class BasicAnnotation {
         System.out.println("这是测试用例2");
     }
 
+    @Test
+    public void testCase3(){
+        System.out.println("这是测试用例3");
+    }
+
     @BeforeMethod
     public void beforeMethod(){
         System.out.println("BeforeMethod是在测试方法之前运行的");
@@ -34,5 +39,15 @@ public class BasicAnnotation {
     @AfterClass
     public void afterClass(){
         System.out.println("AfterClass是在测试类之后运行的");
+    }
+
+    @BeforeSuite
+    public void beforeSuite(){
+        System.out.println("BeforeSuite测试套件");
+    }
+
+    @AfterSuite
+    public void afterSuite(){
+        System.out.println("AfterSuite测试套件");
     }
 }
